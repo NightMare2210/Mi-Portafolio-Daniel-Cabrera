@@ -3,7 +3,8 @@
 import { useLang } from "@/context/LanguageContext";
 
 export default function Hero() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
+  const cvFile = lang === "en" ? "/cv-en.pdf" : "/cv-es.pdf";
 
   const handleScroll = (href) => {
     const el = document.querySelector(href);
@@ -62,7 +63,7 @@ export default function Hero() {
             {t.hero.cta.projects}
           </button>
           <a
-            href="/cv.pdf"
+            href={cvFile}
             download
             className="px-6 py-3 rounded-xl border border-cyan-400/40 hover:border-cyan-400 text-cyan-400 hover:text-white hover:bg-cyan-400/10 font-semibold text-sm transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
           >
