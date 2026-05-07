@@ -21,7 +21,7 @@ const projects = [
       "/portfolio/projects-mobile.png",
       "/portfolio/hero-mobile.png",
     ],
-    github: "https://github.com/brandocabrera",
+    github: "https://github.com/NightMare2210/Mi-Portafolio-Daniel-Cabrera",
     demo: null,
     gradient: "from-cyan-500/20 to-blue-600/20",
     accent: "from-cyan-400 to-blue-500",
